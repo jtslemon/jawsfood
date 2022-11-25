@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jawsfood</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-ico">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 공통서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 모바일 서식 -->
+    <link rel="stylesheet" href="./css/mobile_main.css" type="text/css">
+    <!-- 컴퓨터 서식 -->
+    <link rel="stylesheet" href="./css/pc_main.css" type="text/css">
+
+
+
+    <!-- 플랙스 슬라이더 서식 -->
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <!-- 아이콘 서식 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <!-- 폰트 서식 -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');</style>
+
+    <!-- 프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 플렉스 슬라이더 -->
+    <script src="./script/jquery.flexslider.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <!-- 헤더영역 -->
+    <header>
+        <div class="header_con">
+            <h1>
+                <a href="jawsfood.html" title="죠스떡볶이 바로가기">
+                    <img src="./images/Jaws_logo.jpg" alt="상단로고">
+                </a>
+            </h1>
+            <!-- 왼쪽 상단 네비게이션 -->
+            <label for="toggle" class="on_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <nav class="lnb">
+                <label for="toggle" class="off_btn">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul>
+                    <li>
+                        <label for="sub01" class="main_menu">브랜드
+                            <i class="fas fa-angle-down"></i>
+                        </label>
+                        <input type="checkbox" id="sub01">
+                        <ul class="sub_menu">
+                            <li><a href="greetings.html" title="인사말">인사말</a></li>
+                            <li><a href="employment.html" title="채용정보">채용정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="sub02" class="main_menu">메뉴
+                            <i class="fas fa-angle-down"></i>
+                        </label>
+                        <input type="checkbox" id="sub02">
+                        <ul class="sub_menu">
+                            <li><a href="main_menu.html" title="메인메뉴">메인메뉴</a></li>
+                            <li><a href="set_menu.html" title="세트메뉴">세트메뉴</a></li>
+                            <li><a href="side_menu.html" title="사이드메뉴">사이드메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="sub03" class="main_menu">커뮤니티
+                            <i class="fas fa-angle-down"></i>
+                        </label>
+                        <input type="checkbox" id="sub03">
+                        <ul class="sub_menu">
+                            <li><a href="FAQ.html" title="자주묻는질문">자주묻는질문</a></li>
+                            <li><a href="community.html" title="커뮤니티">커뮤니티</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="sub04" class="main_menu">창업
+                            <i class="fas fa-angle-down"></i>
+                        </label>
+                        <input type="checkbox" id="sub04">
+                        <ul class="sub_menu">
+                            <li><a href="start-up_process.html" title="창업절차">창업절차</a></li>
+                            <li><a href="start-up_FAQ.html" title="창업FAQ">창업FAQ</a></li>
+                            <li><a href="Affiliate_inquiry.html" title="가맹문의">가맹문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인영역 -->
+    <main>
+        <article class="slide">
+            <h2>슬라이드</h2>
+            <!-- 모바일 슬라이드 -->
+            <div class="flexslider mobile_slide">
+                <ul class="slides">
+                    <li class="m_li_slide m_slide01">
+                        <a href="menu.html" title="메뉴01">
+                        <h3>죠스떡볶이</h3>
+                        <p>즐겁게 매운 맛과<br>배려깊은 3.5cm 떡</p>
+                        <img src="./images/Jaws_Tteokbokki.png" alt="메인01"></a>
+                    </li>
+                    <li class="m_li_slide m_slide02">
+                        <a href="menu.html" title="메뉴02">
+                        <h3>국물떡볶이</h3>
+                        <p>더 맛있는 국물과<br>밀떡의 조화</p>
+                        <img src="./images/Soup_Tteokbokki.png" alt="메인02"></a>
+                    </li>
+                    <li class="m_li_slide m_slide03">
+                        <a href="menu.html" title="메뉴03">
+                        <h3>치즈떡볶이</h3>
+                        <p>모짜렐라, 체다, 고다의<br>기가막힌 조화</p>
+                        <img src="./images/Cheese_Tteokbokki.png" alt="메인03"></a>
+                    </li>
+                    <li class="m_li_slide m_slide04">
+                        <a href="menu.html" title="메뉴04">
+                        <h3>버섯크림떡볶이</h3>
+                        <p>표고버섯 향이 살아있는<br>고품격 크림떡볶이</p>
+                        <img src="./images/Mushroom_Cream_Tteokbokki.png" alt="메인04"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 컴퓨터, 테블릿 슬라이드 -->
+            <div class="flexslider pc_tablet_slide">
+                <ul class="slides">
+                    <li class="li_slide pc_tab_slide01">
+                        <a href="menu.html" title="메뉴01">
+                        <h3>죠스떡볶이</h3>
+                        <p>즐겁게 매운 맛과<br>배려깊은 3.5cm 떡</p>
+                        <img src="./images/Jaws_Tteokbokki.png" alt="메인01"></a>
+                    </li>
+                    <li class="li_slide pc_tab_slide02">
+                        <a href="menu.html" title="메뉴02">
+                        <h3>국물떡볶이</h3>
+                        <p>더 맛있는 국물과<br>밀떡의 조화</p>
+                        <img src="./images/Soup_Tteokbokki.png" alt="메인02"></a>
+                    </li>
+                    <li class="li_slide pc_tab_slide03">
+                        <a href="menu.html" title="메뉴03">
+                        <h3>치즈떡볶이</h3>
+                        <p>모짜렐라, 체다, 고다의<br>기가막힌 조화</p>
+                        <img src="./images/Cheese_Tteokbokki.png" alt="메인03"></a>
+                    </li>
+                    <li class="li_slide pc_tab_slide04">
+                        <a href="menu.html" title="메뉴04">
+                        <h3>버섯크림떡볶이</h3>
+                        <p>표고버섯 향이 살아있는<br>고품격 크림떡볶이</p>
+                        <img src="./images/Mushroom_Cream_Tteokbokki.png" alt="메인04"></a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <div class="con_brand">
+            <h2><br>죠스떡볶이</h2>
+            <nav>
+                <h3>"<span>절대로 재료만은</span><br>타협하지 않겠습니다."</h3>
+                <p>2007년 10월 고려대 앞 서점의 반을 얻어 직접 자재를 사서 자르고 칠하고, 중앙시장에서 중고 그릇을 사다가 소독하고 씻고 했던 개업시절, 고객들의 평가를 받는 첫 날 너무 긴장돼서 안절부절 못하던 그 때를 잊지 못합니다.</p>
+            </nav>
+        </div>
+        <section class="con_menu">
+            <h2>메인메뉴</h2>
+            <article class="con_menu01">
+                <a href="menu.html" title="메뉴01">
+                    <p>순한맛 & 매운맛</p>
+                    <h3>국물떡볶이</h3>
+                    <p>더 맛있는 국물과 밀떡의 조화!</p>
+                    <img src="./images/Soup_Tteokbokki.png" alt="메인01">
+                </a>
+            </article>
+            <article class="con_menu02">
+                <a href="menu.html" title="메뉴02">
+                    <p>매운데, 안매워</p>
+                    <h3>로제크림떡볶이</h3>
+                    <p>매운죠스떡볶이에 크림치즈가 듬뿍!</p>
+                    <img src="./images/Rose_Cream_Tteokbokki.png" alt="메인02">
+                </a>
+            </article>
+            <article class="con_menu03">
+                <a href="menu.html" title="메뉴03">
+                    <p>따라올 수 없는 바삭함</p>
+                    <h3>수제튀김</h3>
+                    <p>전용유로 튀겨 고소한 튀김 맛!</p>
+                    <img src="./images/fried_food.png" alt="메인03">
+                </a>
+            </article>
+            <article class="con_menu04">
+                <a href="menu.html" title="메뉴04">
+                    <p>풍미가듯 ~ 부드러운</p>
+                    <h3>버섯크림떡볶이</h3>
+                    <p>표고버섯이 살아있는 고품격 크림 떡볶이</p>
+                    <img src="./images/Mushroom_Cream_Tteokbokki.png" alt="메인04">
+                </a>
+            </article>
+            <article class="con_menu05">
+                <a href="menu.html" title="메뉴05">
+                    <p>어묵의 깊은 바다향과 기분 좋은 식감</p>
+                    <h3>부산어묵</h3>
+                    <p>높은 어육함량, 씹는 맛이 남다른 수제어묵!</p>
+                    <img src="./images/Busan_fish_cake.png" alt="메인05">
+                </a>
+            </article>
+            <article class="con_menu06">
+                <a href="menu.html" title="메뉴06">
+                    <p>고소하고 쫄깃한</p>
+                    <h3>치즈떡볶이</h3>
+                    <p>트리플 치즈가 담백하게 쭈~욱!</p>
+                    <img src="./images/Cheese_Tteokbokki.png" alt="메인06">
+                </a>
+            </article>
+            <h3>MORE</h3>
+        </section>
+        <section class="con_store">
+            <h2>매장찾기</h2>
+            <div class="map_wrap">
+                <article class="map">
+                    <a href="map.html" title="지도">
+                        <img src="./images/map.jpg" alt="지도">
+                    </a>
+                    <nav class="search">
+                        <input type="search" placeholder="SEARCH" class="search_box">
+                        <iput type="button" value="검색">
+                        <a href="search.html" title="검색">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </nav>
+                </article>
+                <article class="where01">
+                    <a href="map.html" title="가산디지털점">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>가산디지털점</p>
+                    </a>
+                </article>
+
+                <article class="where02">
+                    <a href="map.html" title="강남중앙점">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>강남중앙점</p>
+                    </a>
+                </article>
+
+                <article class="where03">
+                    <a href="map.html" title="강동역점">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>강동역점</p>
+                    </a>
+                </article>
+                <article class="where04">
+                    <a href="map.html" title="강원대점">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>강원대점</p>
+                    </a>
+                </article>
+                <article class="where05">
+                    <a href="map.html" title="개롱역점">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>개롱역점</p>
+                    </a>
+                </article>
+                <article class="where06">
+                    <a href="map.html" title="개봉역점">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>개봉역점</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section class="QA">
+            <h2>자주 묻는 질문</h2>
+            <ul>
+                <li>
+                    <h3>TOP. 1</h3>
+                    <p>Q 배달최소금액과 배달료가 가맹점마다 다른가요?</p>
+                </li>
+                <li>
+                    <h3>TOP. 2</h3>
+                    <p>Q 가맹점마다 휴일이나 영업시간이 다른가요?</p>
+                </li>
+                <li>
+                    <h3>TOP. 3</h3>
+                    <p>Q 배달 주문을 했는데 치즈가 보이지 않아요.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="founded">
+            <article class="founded_left">
+                <h3>창업문의</h3>
+                <p>1688-2868</p>
+            </article>
+            <article class="founded_right">
+                <a href="go.html" title="바로가기">바로가기</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- 푸터영역 -->
+    <input type="checkbox" id="foot_toggle">
+    <footer>
+        <a href="#" title="top"><p>TOP</p></a>
+        <ul class="foot_nav">
+            <li class="a1"><a href="employment.html" title="채용안내">채용안내</a></li>
+            <li class="a2"><a href="Privacy.html" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li class="a3"><a href="terms.html" title="이용약관">이용약관</a></li>
+            <li class="a4"><a href="site_map.html" title="사이트맵">사이트맵</a></li>
+        </ul>
+        <address class="foot_add">
+            <span class="info_01">
+                <p>고객의 소리 1600-7984</p>
+                <p class="mobile_bar">-</p>
+                <p>오전 10시 ~ 오후 5시 / 점심시간 오후 1시 ~ 오후 2시 주말 및 공휴일 휴무</p>
+                <p class="mobile_bar">-</p>
+                <p>창업문의 1688-2868</p>
+            </span>
+            <span class="info_02">
+                <p>대표이사 나상균</p>
+                <p>사업자등록번호 209-81-54096 / 서울특별시 언주로 147길 20</p>
+                <p>COPYRIGHT &copy; JAWSFOOD ALL RIGHTS RESERVED.</p>
+            </span>
+        </address>
+        <ul class="family_site">
+            <li>
+                <label for="foot_toggle" class="site">FAMILY SITE
+                    <i class="fas fa-angle-down"></i>
+                </label>
+            </li>
+            <li>
+                <a href="https://www.teacherkim.co.kr/" title="바르다김선생">바르다김선생</a>
+            </li>
+        </ul>
+        
+        <a href="#" title="img">
+            <img src="./images/Jaws_footer_logo.png" alt="">
+        </a>
+    </footer>
+
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+            animation: "slide"
+            });
+        });
+    </script>
+</body>
+</html>
